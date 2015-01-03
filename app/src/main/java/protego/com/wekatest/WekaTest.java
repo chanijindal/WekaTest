@@ -15,6 +15,7 @@ import weka.classifiers.evaluation.NominalPrediction;
 import weka.core.FastVector;
 import weka.core.Instances;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.util.Log;
@@ -25,6 +26,12 @@ import android.util.Log;
 public class WekaTest {
 
     Context context ;
+    WekaTest(Context context)
+    {
+        this.context=context;
+
+    }
+
     public BufferedReader readDataFile(String filename)
     {
 
